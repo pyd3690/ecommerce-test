@@ -70,8 +70,14 @@ export default class MyApp extends App {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <title>Notus NextJS by Creative Tim</title>
           <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+        <link rel="preconnect" href="https://app.snipcart.com" />
+        <link rel="preconnect" href="https://cdn.snipcart.com" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.css"
+        />
+        <script src="https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.js" />
         </Head>
         <Layout>
           <Component {...pageProps} />

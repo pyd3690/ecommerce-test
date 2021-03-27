@@ -1,14 +1,18 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import Link from "next/link";
+import Head from "next/head";
 
-import IndexNavbar from "components/Navbars/IndexNavbar.js";
+import IndexNavbar from "components/Navbars/AnaisNavBar.js";
 import Footer from "components/Footers/Footer.js";
 
 export default function Index() {
   return (
     <>
-      <IndexNavbar fixed />
+      <IndexNavbar fixed />      
+      <Head>
+        <title>Home</title>
+      </Head>
       <section className="header relative pt-16 items-center flex h-screen max-h-860-px">
         <div className="container mx-auto items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
@@ -662,6 +666,12 @@ export default function Index() {
         </div>
       </section>
       <Footer />
+      <div
+        hidden
+        id="snipcart"
+        data-api-key="ODhhNWUxOGEtNTk0OC00OTQwLWJkOWMtM2M1ZmNjODU1ZDJhNjM3MzMyNzM0NjM1OTMyNjcz"
+        data-currency="xof"
+      ></div>
     </>
   );
 }
